@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>G. Sri HariPriya - 1 Page Resume</title>
+  <title>G. Sri HariPriya - Resume</title>
   <style>
     * {
       box-sizing: border-box;
@@ -11,125 +11,139 @@
       padding: 0;
     }
     body {
-      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
       color: #111827;
       background-color: #f3f4f6;
-      padding: 15px;
-      line-height: 1.35;
+      padding: 20px 10px;
+      line-height: 1.45;
     }
     .toolbar {
-      max-width: 800px;
-      margin: 0 auto 12px auto;
+      max-width: 820px;
+      margin: 0 auto 15px auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
       background: white;
-      padding: 10px 18px;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
     .btn-download {
       background: #2563eb;
       color: white;
       border: none;
-      padding: 8px 18px;
-      font-size: 14px;
+      padding: 10px 22px;
+      font-size: 15px;
       font-weight: 600;
       border-radius: 6px;
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
+      transition: background 0.2s;
     }
     .btn-download:hover {
       background: #1d4ed8;
     }
     .resume-card {
-      max-width: 800px;
+      max-width: 820px;
       margin: 0 auto;
       background: white;
-      padding: 24px 32px;
+      padding: 38px 45px;
       border-radius: 4px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
     }
     .header {
       text-align: center;
-      border-bottom: 1.5px solid #1f2937;
-      padding-bottom: 8px;
-      margin-bottom: 10px;
+      border-bottom: 2px solid #1f2937;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
     }
     .name {
-      font-size: 21px;
+      font-size: 24px;
       font-weight: 700;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.8px;
       color: #111827;
       text-transform: uppercase;
-      margin-bottom: 3px;
+      margin-bottom: 6px;
     }
     .contact-info {
-      font-size: 12px;
+      font-size: 13px;
       color: #374151;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 4px 10px;
+      align-items: center;
+      gap: 6px 14px;
+      margin-bottom: 3px;
     }
     .contact-info a {
-      color: #2563eb;
+      color: #1d4ed8;
       text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
     }
     .section {
-      margin-bottom: 9px;
+      margin-bottom: 13px;
     }
     .section-title {
-      font-size: 12.5px;
+      font-size: 13.5px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: #1f2937;
-      border-bottom: 1px solid #d1d5db;
-      padding-bottom: 2px;
-      margin-bottom: 5px;
+      letter-spacing: 0.6px;
+      color: #111827;
+      border-bottom: 1.5px solid #d1d5db;
+      padding-bottom: 3px;
+      margin-bottom: 7px;
     }
     .item-header {
       display: flex;
       justify-content: space-between;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
       color: #111827;
     }
     .item-sub {
-      font-size: 11.5px;
+      font-size: 12.5px;
       color: #4b5563;
-      margin-bottom: 3px;
-    }
-    ul {
-      margin-left: 18px;
-    }
-    li {
-      font-size: 11.5px;
-      color: #374151;
-      margin-bottom: 2px;
+      margin-bottom: 4px;
     }
     .skills-p {
-      font-size: 11.5px;
+      font-size: 12.5px;
       color: #374151;
-      margin-bottom: 2.5px;
+      margin-bottom: 4px;
+      line-height: 1.5;
     }
     .skills-p strong {
       color: #111827;
+      font-weight: 700;
     }
     .proj-item {
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+      line-height: 1.45;
     }
     .proj-title {
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
       color: #111827;
     }
     .proj-desc {
-      font-size: 11.5px;
+      font-size: 12.5px;
       color: #374151;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    li {
+      font-size: 12.5px;
+      color: #374151;
+      margin-bottom: 3.5px;
+      line-height: 1.45;
+    }
+    li strong {
+      color: #111827;
     }
 
     @media print {
@@ -148,7 +162,7 @@
       }
       @page {
         size: A4 portrait;
-        margin: 10mm 12mm;
+        margin: 11mm 13mm;
       }
     }
   </style>
@@ -158,16 +172,17 @@
   <!-- Top Toolbar -->
   <div class="toolbar">
     <div>
-      <strong style="color: #111827; font-size: 15px;">G. Sri HariPriya — 1-Page ATS Resume</strong>
-      <div style="font-size: 12px; color: #6b7280;">Optimized to fit exactly on 1 Page (A4)</div>
+      <strong style="color: #111827; font-size: 16px;">G. Sri HariPriya — 1-Page ATS Resume</strong>
+      <div style="font-size: 13px; color: #6b7280;">Neatly formatted to fill exactly 1 Full Page (A4)</div>
     </div>
     <button class="btn-download" onclick="window.print()">
-      📄 Download 1-Page PDF
+      📄 Download as PDF (Print)
     </button>
   </div>
 
-  <!-- Main Resume Content (Exact 1-Page Layout) -->
+  <!-- Main Resume Card -->
   <div class="resume-card">
+    <!-- Header -->
     <div class="header">
       <div class="name">G. Sri HariPriya</div>
       <div class="contact-info">
@@ -175,11 +190,14 @@
         <span>•</span>
         <span><a href="mailto:haripriyasri695@gmail.com">haripriyasri695@gmail.com</a></span>
         <span>•</span>
+        <span>Portfolio: <a href="https://haripriyasri695-sys.github.io/portfolio/" target="_blank">haripriyasri695-sys.github.io/portfolio</a></span>
+      </div>
+      <div class="contact-info" style="margin-top: 4px;">
         <span>GitHub: <a href="https://github.com/haripriyasri695" target="_blank">github.com/haripriyasri695</a></span>
         <span>•</span>
         <span>LinkedIn: <a href="https://www.linkedin.com/in/sri-hari-priya-1038a83a1" target="_blank">linkedin.com/in/sri-hari-priya-1038a83a1</a></span>
       </div>
-      <div class="contact-info" style="margin-top: 2px;">
+      <div class="contact-info" style="margin-top: 4px; color: #4b5563;">
         <span>DVR & Dr. HS MIC College of Technology</span>
       </div>
     </div>
@@ -187,8 +205,8 @@
     <!-- Career Objective -->
     <div class="section">
       <div class="section-title">Career Objective</div>
-      <p style="font-size: 11.5px; color: #374151;">
-        Motivated Computer Science undergraduate with strong interest in Artificial Intelligence, Machine Learning, and Core CS systems. Seeking research and software engineering internship opportunities to gain hands-on experience and solve real-world problems.
+      <p style="font-size: 12.5px; color: #374151; line-height: 1.5;">
+        Motivated Computer Science undergraduate with a strong interest in Artificial Intelligence, Machine Learning, and Core Computer Science systems. Seeking research and software engineering internship opportunities to gain hands-on experience and solve real-world problems.
       </p>
     </div>
 
@@ -201,13 +219,13 @@
       </div>
       <div class="item-sub">CGPA: <strong>8.53 / 10</strong> with strong academic performance</div>
 
-      <div class="item-header" style="margin-top: 3px;">
+      <div class="item-header" style="margin-top: 4px;">
         <span>Intermediate (MPC) – NRI Junior College</span>
         <span>2022 – 2024</span>
       </div>
       <div class="item-sub">Score: <strong>97.7%</strong></div>
 
-      <div class="item-header" style="margin-top: 3px;">
+      <div class="item-header" style="margin-top: 4px;">
         <span>SSC (10th Standard) – Z P H S High School</span>
         <span>2022</span>
       </div>
@@ -227,11 +245,11 @@
       <div class="section-title">Projects</div>
       <div class="proj-item">
         <span class="proj-title">AI Smart Learning Path System:</span>
-        <span class="proj-desc"> Personalized study platform using Python to generate adaptive learning paths.</span>
+        <span class="proj-desc"> Personalized study platform using Python to generate adaptive learning paths based on student skill levels.</span>
       </div>
       <div class="proj-item">
         <span class="proj-title">Fake News Detection System:</span>
-        <span class="proj-desc"> Machine learning model for automated fake news detection and text classification.</span>
+        <span class="proj-desc"> Machine learning text classification model for automated real-time fake news detection.</span>
       </div>
       <div class="proj-item">
         <span class="proj-title">AI Resume Analyzer:</span>
@@ -239,7 +257,7 @@
       </div>
       <div class="proj-item">
         <span class="proj-title">Smart Attendance System:</span>
-        <span class="proj-desc"> Real-time facial recognition attendance marker using computer vision algorithms.</span>
+        <span class="proj-desc"> Real-time facial recognition attendance marking system utilizing computer vision algorithms.</span>
       </div>
     </div>
 
@@ -247,16 +265,16 @@
     <div class="section" style="margin-bottom: 0;">
       <div class="section-title">Achievements & Certifications</div>
       <ul>
-        <li><strong>Amazon ML Summer School:</strong> Shortlisted for Amazon ML Summer School Internship.</li>
-        <li><strong>Open Source Contributions:</strong> Contributed to Open Source projects with merged Pull Request (PR) on GitHub.</li>
-        <li><strong>Hackathons & Contests:</strong>
-          <ul>
-            <li>Participated in <strong>Hack with Hyderabad</strong> (Received Participation Certificate).</li>
+        <li><strong>Amazon ML Summer School:</strong> Shortlisted for the prestigious Amazon ML Summer School Internship.</li>
+        <li><strong>Open Source Contributions:</strong> Actively contributed to Open Source projects with merged Pull Request (PR) on GitHub.</li>
+        <li><strong>Hackathons & Competitions:</strong>
+          <ul style="margin-top: 2px;">
+            <li>Participated in <strong>Hack with Hyderabad</strong> (National Hackathon — Received Participation Certificate).</li>
             <li>Participated in <strong>Hacktoberfest</strong>, <strong>BlouseBucks</strong>, and <strong>ChatGPT Codex</strong> (Participation Certificate).</li>
           </ul>
         </li>
-        <li><strong>Problem Solving:</strong> Solved Data Structures & Algorithms problems on LeetCode.</li>
-        <li><strong>Academic Excellence:</strong> Maintained consistent high academic standing with <strong>8.53 CGPA</strong> in B.Tech.</li>
+        <li><strong>Problem Solving:</strong> Solved Data Structures and Algorithms problems on LeetCode demonstrating strong analytical skills.</li>
+        <li><strong>Academic Excellence:</strong> Maintained top academic standing with <strong>8.53 CGPA</strong> in B.Tech Computer Science.</li>
       </ul>
     </div>
   </div>
